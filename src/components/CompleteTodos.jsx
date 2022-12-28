@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const CompleteTodos = (props) => {
-  const { todos, onClick } = props
+  const { todos, onClickBack } = props
 
   return (
     <div className="complete-area">
@@ -11,7 +11,7 @@ export const CompleteTodos = (props) => {
           return (
             <div key={todo} className="list-row">
             <li>{todo}</li>
-            <button onClick={() => onClick(index)}>戻す</button>
+            <button onClick={() => onClickBack(index)}>戻す</button>
           </div>
           )
         })}
