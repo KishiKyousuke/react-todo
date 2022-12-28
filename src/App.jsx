@@ -51,7 +51,7 @@ export const App = () => {
         onClickComplete={onClickComplete} 
         onClickDelete={onClickDelete} 
       />
-      <CompleteTodos todos={completeTodos} onClick={onClickBack} />
+      <CompleteTodos todos={completeTodos} onClickBack={onClickBack} />
     </>
   )
 }
